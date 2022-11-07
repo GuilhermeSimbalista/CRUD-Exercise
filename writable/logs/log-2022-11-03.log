@@ -1,0 +1,235 @@
+ERROR - 2022-11-03 08:53:24 --> mysqli_sql_exception: Unknown column 'cliente.deleted_at' in 'where clause' in C:\wamp64\www\Atividade_codeIgniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\Atividade_codeIgniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Atividade_codeIgniter\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Atividade_codeIgniter\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\Atividade_codeIgniter\app\Controllers\Cliente.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(927): App\Controllers\Cliente->index()
+#8 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#9 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\Atividade_codeIgniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\Atividade_codeIgniter\system\Commands\Server\rewrite.php(46): require_once('C:\\wamp64\\www\\A...')
+#12 {main}
+CRITICAL - 2022-11-03 08:53:24 --> Unknown column 'cliente.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `cliente`
+WHERE `cliente`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `cliente`
+WHERE `cliente`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `cliente`
+WHERE `cliente`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cliente`
+WHERE `cliente`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Cliente.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 09:05:21 --> Undefined variable: rouges
+in APPPATH\Config\Routes.php on line 40.
+ 1 APPPATH\Config\Routes.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rouges', 'APPPATH\\Config\\Routes.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(789): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 09:05:45 --> Undefined variable: rouges
+in APPPATH\Config\Routes.php on line 40.
+ 1 APPPATH\Config\Routes.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rouges', 'APPPATH\\Config\\Routes.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(789): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 09:05:48 --> Undefined variable: rouges
+in APPPATH\Config\Routes.php on line 40.
+ 1 APPPATH\Config\Routes.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rouges', 'APPPATH\\Config\\Routes.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(789): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 09:06:25 --> Undefined variable: rouges
+in APPPATH\Config\Routes.php on line 40.
+ 1 APPPATH\Config\Routes.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rouges', 'APPPATH\\Config\\Routes.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(789): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 09:06:46 --> Undefined variable: rouges
+in APPPATH\Config\Routes.php on line 40.
+ 1 APPPATH\Config\Routes.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rouges', 'APPPATH\\Config\\Routes.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(789): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 09:06:48 --> Undefined variable: rouges
+in APPPATH\Config\Routes.php on line 40.
+ 1 APPPATH\Config\Routes.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rouges', 'APPPATH\\Config\\Routes.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(789): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-03 09:28:05 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\wamp64\www\Atividade_codeIgniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\Atividade_codeIgniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\wamp64\www\Atividade_codeIgniter\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\Atividade_codeIgniter\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\Atividade_codeIgniter\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\Atividade_codeIgniter\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\Atividade_codeIgniter\app\Controllers\Cliente.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(927): App\Controllers\Cliente->store()
+#10 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#11 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\Atividade_codeIgniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\Atividade_codeIgniter\system\Commands\Server\rewrite.php(46): require_once('C:\\wamp64\\www\\A...')
+#14 {main}
+CRITICAL - 2022-11-03 09:28:05 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (\'Guilherme\', \'Gui\', \'0959595\', \'guilhere\', \'2002-08-07\', \'2022-11-03 09:28:05\', \'2022-11-03 09:28:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (\'Guilherme\', \'Gui\', \'0959595\', \'guilhere\', \'2002-08-07\', \'2022-11-03 09:28:05\', \'2022-11-03 09:28:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (\'Guilherme\', \'Gui\', \'0959595\', \'guilhere\', \'2002-08-07\', \'2022-11-03 09:28:05\', \'2022-11-03 09:28:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (:name:, :username:, :cpf:, :email:, :data_nascimento:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Cliente.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->store()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-03 09:33:20 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\wamp64\www\Atividade_codeIgniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\Atividade_codeIgniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\wamp64\www\Atividade_codeIgniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\wamp64\www\Atividade_codeIgniter\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\Atividade_codeIgniter\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\Atividade_codeIgniter\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\Atividade_codeIgniter\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\Atividade_codeIgniter\app\Controllers\Cliente.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(927): App\Controllers\Cliente->store()
+#10 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#11 C:\wamp64\www\Atividade_codeIgniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\Atividade_codeIgniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\Atividade_codeIgniter\system\Commands\Server\rewrite.php(46): require_once('C:\\wamp64\\www\\A...')
+#14 {main}
+CRITICAL - 2022-11-03 09:33:20 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (\'Guilherme\', \'Gui\', \'0959595\', \'guilhere\', \'2002-08-07\', \'2022-11-03 09:33:20\', \'2022-11-03 09:33:20\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (\'Guilherme\', \'Gui\', \'0959595\', \'guilhere\', \'2002-08-07\', \'2022-11-03 09:33:20\', \'2022-11-03 09:33:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (\'Guilherme\', \'Gui\', \'0959595\', \'guilhere\', \'2002-08-07\', \'2022-11-03 09:33:20\', \'2022-11-03 09:33:20\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`name`, `username`, `cpf`, `email`, `data_nascimento`, `created_at`, `updated_at`) VALUES (:name:, :username:, :cpf:, :email:, :data_nascimento:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Cliente.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->store()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 16:40:38 --> Invalid file: clientes.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('clientes', [], true)
+ 3 APPPATH\Controllers\Cliente.php(19): view('clientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 16:41:25 --> Invalid file: clientes.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('clientes', [], true)
+ 3 APPPATH\Controllers\Cliente.php(19): view('clientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 16:41:32 --> Invalid file: clientes.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('clientes', [], true)
+ 3 APPPATH\Controllers\Cliente.php(19): view('clientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 16:43:32 --> Invalid file: form.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Cliente.php(35): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->create()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 16:49:11 --> Invalid file: clientes.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('clientes', [], true)
+ 3 APPPATH\Controllers\Cliente.php(41): view('clientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->store()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 16:49:18 --> Invalid file: clientes.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('clientes', [], true)
+ 3 APPPATH\Controllers\Cliente.php(41): view('clientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->store()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 16:49:40 --> Undefined variable: clientes
+in APPPATH\Views\clientes\clientes.php on line 34.
+ 1 APPPATH\Views\clientes\clientes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: clientes', 'APPPATH\\Views\\clientes\\clientes.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('clientes/clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(41): view('clientes/clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cliente->store()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 19:13:10 --> Undefined variable: cliente
+in APPPATH\Views\produto\form.php on line 28.
+ 1 APPPATH\Views\produto\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cliente', 'APPPATH\\Views\\produto\\form.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produto\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('produto/form', [], true)
+ 5 APPPATH\Controllers\Produto.php(49): view('produto/form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Produto->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produto))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
